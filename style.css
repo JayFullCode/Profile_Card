@@ -8,16 +8,22 @@ html , body{
 
     height: 100%;
 
-    background-color: blue;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+body{
+    background: url('images/bg-pattern-bottom.svg') bottom -600px right -150px no-repeat, url('images/bg-pattern-top.svg') top -500px left -200px no-repeat;
+    background-color: #009BA8;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}   
+
 #card{
-    height: 350px;
-    width: 300px;
+    height: 420px;
+    width: 400px;
     border-radius: 20px;
 }
 
@@ -55,19 +61,28 @@ html , body{
 }
 
 #body-infos p{
-    margin: 0;
+
+    margin-bottom: 3px;
+    color: #75767B;
+
+}
+
+#name{
+    font-size: x-large;
+}
+
+#location{
+    font-size: larger;
 }
 
 #body-infos{
     display: flex;
     flex-direction: column;
 
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 
     flex: 1;
-
-    padding: 20px;
 }
 
 #card_infos{
@@ -84,6 +99,15 @@ html , body{
 
 .number-infos p{
     margin: 0;
+    color: black;
+
+    font-size: x-large;
+}
+
+.number-infos p + p{
+    color: #75767B;
+
+    font-size: medium;
 }
 
 .number-infos{
@@ -92,3 +116,7 @@ html , body{
     flex: 1 1 0;
 }
 
+#strong_name{
+    font-weight: 700;
+    color: black;
+}
